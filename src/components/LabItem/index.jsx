@@ -1,9 +1,9 @@
 import React from "react";
 //import "./LabItem.css";
 
-const LabItem = ({ title, tags }) => {
+const LabItem = ({ title, tags, onClick }) => {
   return (
-    <div className="LabItem">
+    <div className="LabItem" onClick={onClick}>
       <h3>{title}</h3>
       <p>
         {tags.map((tag, index) => {
