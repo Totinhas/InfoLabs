@@ -4,20 +4,12 @@ import { LabItem } from "../../components";
 
 // import "./HomePage.css";
 
-const Home = ({}) => {
-  const listOfLabs = [
-    { title: "carrot soup", tags: ["soup", "vegetable"] },
-    { title: "homemade bread", tags: ["bread"] },
-    { title: "bolognese", tags: ["meat", "italian"] },
-    { title: "ramen", tags: ["soup", "japanese"] },
-    { title: "garlic bread", tags: ["bread"] },
-    { title: "tomato soup", tags: ["soup"] },
-  ];
+const Home = ({ listOfLabs, handleClickLabItem }) => {
   const options = [
     { label: "by Tag", value: "tag" },
     { label: "by Title", value: "title" },
   ];
-  const [selectedLab, setSelectedLab] = useState();
+
   const [filteredListOfLabs, setFilteredListOfLabs] = useState(listOfLabs);
   const [searchType, setSearchType] = useState({
     label: "by Tag",
@@ -26,9 +18,7 @@ const Home = ({}) => {
   const handleChange = (value) => {
     setSearchType(value);
   };
-  const handleClickLabItem = (index) => {
-    setSelectedLab = filteredListOfLabs[index];
-  };
+
   const search = (event) => {
     const updatedFilteredListOfLabs = listOfLabs.filter((lab) => {
       switch (searchType.value) {
@@ -72,7 +62,7 @@ const Home = ({}) => {
                 title={lab.title}
                 tags={lab.tags}
                 onClick={() => {
-                  handleClickLabItem(index);
+                  handleClickLabItem(lab.id);
                 }}
               ></LabItem>
             );
