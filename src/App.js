@@ -12,12 +12,58 @@ import { Home, Lab } from "./pages";
 
 function App() {
   const labs = [
-    { id: "aa", title: "carrot soup", tags: ["soup", "vegetable"] },
-    { id: "bb", title: "homemade bread", tags: ["bread"] },
-    { id: "cc", title: "bolognese", tags: ["meat", "italian"] },
-    { id: "dd", title: "ramen", tags: ["soup", "japanese"] },
-    { id: "ee", title: "garlic bread", tags: ["bread"] },
-    { id: "ff", title: "tomato soup", tags: ["soup"] },
+    {
+      id: "aa",
+      title: "carrot soup",
+      level: "Advanced",
+      tags: ["soup", "vegetable"],
+      sections: [
+        { title: "Section 1", depth: 2, md: "some text" },
+        { title: "Section 1.1", depth: 3, md: "some text" },
+        { title: "Section 2", depth: 2, md: "some text" },
+        { title: "Section 2.1", depth: 3, md: "some text" },
+        { title: "Section 2.2", depth: 3, md: "some text" },
+        { title: "Section 3", depth: 2, md: "some text" },
+        { title: "Section 3.1", depth: 3, md: "some text" },
+        { title: "Section 3.2", depth: 3, md: "some text" },
+        { title: "Section 3.3", depth: 3, md: "some text" },
+      ],
+    },
+    {
+      id: "bb",
+      title: "homemade bread",
+      level: "Advanced",
+      tags: ["bread"],
+      sections: [],
+    },
+    {
+      id: "cc",
+      title: "bolognese",
+      level: "Advanced",
+      tags: ["meat", "italian"],
+      sections: [],
+    },
+    {
+      id: "dd",
+      title: "ramen",
+      level: "Advanced",
+      tags: ["soup", "japanese"],
+      sections: [],
+    },
+    {
+      id: "ee",
+      title: "garlic bread",
+      level: "Advanced",
+      tags: ["bread"],
+      sections: [],
+    },
+    {
+      id: "ff",
+      title: "tomato soup",
+      level: "Advanced",
+      tags: ["soup"],
+      sections: [],
+    },
   ];
   const history = useHistory();
   const [selectedLab, setSelectedLab] = useState();
