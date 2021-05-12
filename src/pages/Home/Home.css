@@ -1,0 +1,38 @@
+.App ul {
+  list-style: none;
+}
+
+.App ul li {
+  display: inline-block;
+  position: relative;
+  padding: 20px 20px;
+}
+
+.App ul li > a {
+  text-decoration: none;
+}
+
+#searchBar div > input {
+  width: 60%;
+  display: inline-block;
+  height: 30px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+#searchBar .selectSearchBy {
+  width: 20%;
+  display: inline-block;
+  height: 30px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#searchBar .css-yk16xz-control {
+  padding: 0px;
+  height: 40px;
+}
+
+#searchBar .css-g1d714-ValueContainer {
+  padding: 0px;
+}

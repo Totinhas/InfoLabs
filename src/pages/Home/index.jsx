@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import { LabItem } from "../../components";
+import "./Home.css";
 
 // import "./HomePage.css";
 
@@ -45,6 +46,7 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
           <input type="text" onChange={search}></input>
 
           <Select
+            className="selectSearchBy"
             options={options}
             value={searchType}
             onChange={(value) => handleChange(value)}

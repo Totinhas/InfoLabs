@@ -1,0 +1,35 @@
+.Lab nav,
+.Lab div {
+  display: inline-block;
+}
+
+.Lab nav {
+  vertical-align: top;
+  width: 20%;
+  margin-right: 50px;
+}
+.Lab li {
+  list-style: none;
+  text-align: left;
+  padding: 10px 10px;
+  color: #001d4a;
+}
+
+.Lab li a {
+  text-decoration: none;
+  color: #001d4a;
+}
+
+.section {
+  padding: 8px 0px;
+  background-color: #eaf8bf;
+  border-bottom: 2px solid #ffffff;
+  margin-top: 10px;
+}
+
+.subSection {
+  padding: 8px 0px;
+  background-color: #eaf8bf;
+  border-bottom: 2px solid #ffffff;
+  margin-left: 40px;
+}
