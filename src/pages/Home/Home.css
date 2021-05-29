@@ -1,38 +1,62 @@
 .App ul {
   list-style: none;
+  padding: 0px;
 }
 
 .App ul li {
   display: inline-block;
   position: relative;
-  padding: 20px 20px;
 }
 
 .App ul li > a {
   text-decoration: none;
 }
 
+#results {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#searchBar {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 80%;
+}
+
 #searchBar div > input {
-  width: 60%;
+  width: 75%;
   display: inline-block;
   height: 30px;
-  margin-right: 20px;
+
   box-sizing: border-box;
 }
 
 #searchBar .selectSearchBy {
-  width: 20%;
+  width: 15%;
   display: inline-block;
   height: 30px;
   padding: 0px;
   box-sizing: border-box;
+  min-width: 140px;
 }
 
-#searchBar .css-yk16xz-control {
-  padding: 0px;
-  height: 40px;
+.LabItem {
+  width: 90%;
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  background-color: rgb(234, 248, 191, 1);
+  border-radius: 4px;
+  padding: 10px 10px;
 }
 
-#searchBar .css-g1d714-ValueContainer {
-  padding: 0px;
+.css-yk16xz-control {
+  margin-right: 30px;
+}
+
+.LabItem h3 {
+  color: #001d4a;
+  text-transform: uppercase;
 }

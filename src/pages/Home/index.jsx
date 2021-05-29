@@ -43,8 +43,6 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
       <h2>Title</h2>
       <div id="searchBar">
         <div>
-          <input type="text" onChange={search}></input>
-
           <Select
             className="selectSearchBy"
             options={options}
@@ -52,6 +50,7 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
             onChange={(value) => handleChange(value)}
             defaultValue={{ label: "by Tag", value: "tag" }}
           />
+          <input type="text" onChange={search}></input>
         </div>
         <div></div>
       </div>
@@ -63,6 +62,7 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
                 key={index}
                 title={lab.title}
                 tags={lab.tags}
+                level={lab.level}
                 onClick={() => {
                   handleClickLabItem(lab.id);
                 }}

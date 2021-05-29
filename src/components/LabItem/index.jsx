@@ -1,7 +1,7 @@
 import React from "react";
 //import "./LabItem.css";
 
-const LabItem = ({ title, tags, onClick }) => {
+const LabItem = ({ title, tags, onClick, level }) => {
   return (
     <div className="LabItem" onClick={onClick}>
       <h3>{title}</h3>
@@ -10,6 +10,7 @@ const LabItem = ({ title, tags, onClick }) => {
           return <span>{tag} </span>;
         })}
       </p>
+      <p>{level}</p>
     </div>
   );
 };
