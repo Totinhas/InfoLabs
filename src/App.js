@@ -13,56 +13,108 @@ import { Home, Lab } from "./pages";
 function App() {
   const labs = [
     {
-      id: "aa",
-      title: "carrot soup",
-      level: "Advanced",
-      tags: ["soup", "vegetable"],
-      sections: [
-        { title: "Section 1", depth: 2, md: "some text" },
-        { title: "Section 1.1", depth: 3, md: "some text" },
-        { title: "Section 2", depth: 2, md: "some text" },
-        { title: "Section 2.1", depth: 3, md: "some text" },
-        { title: "Section 2.2", depth: 3, md: "some text" },
-        { title: "Section 3", depth: 2, md: "some text" },
-        { title: "Section 3.1", depth: 3, md: "some text" },
-        { title: "Section 3.2", depth: 3, md: "some text" },
-        { title: "Section 3.3", depth: 3, md: "some text" },
+      id: "example",
+      metadata: {
+        level: "Intermediate",
+        tags: "tag1,tag2,tag3",
+        status: "Published",
+      },
+      title: "Title",
+      steps: [
+        {
+          text: "Overview",
+          subSteps: [
+            {
+              text: "Context",
+              raw: "Context of the problem.\n\n",
+            },
+            {
+              text: "Problem",
+              raw: "What are we trying to solve?\n\n",
+            },
+            {
+              text: "Solution",
+              raw: "How are we going to solve the problem?\n\n",
+            },
+            {
+              text: "Prerequisites",
+              raw: "- Access\n- Tools\n- Other labs\n- Prior knowledge\n\n",
+            },
+            {
+              text: "Important",
+              raw: "Any important notes\n\n",
+            },
+          ],
+          raw: "Explanation of what is going to be achieved, what are the prerequisites and important notes.\n\n",
+        },
+        {
+          text: "Step 1",
+          subSteps: [
+            {
+              text: "Step 1.1",
+              raw: 'A sub step, the index will show up to this level only\n\n```js\nconst crypto = require("crypto");\n\nfunction hash7(string) {\n  const hash = crypto.createHash("sha256");\n  hash.update(string);\n  return hash.digest("hex").substring(0, 7);\n}\n```\n\n',
+            },
+          ],
+          raw: "The actual steps to achieve the goal of the lab. Feel free to use the full potential of markdown.\n\n",
+        },
+        {
+          text: "Step 2",
+          subSteps: [
+            {
+              text: "Step 2.1",
+              raw: "A sub step, the index will show up to this level only\n\n",
+            },
+            {
+              text: "Step 2.2",
+              raw: "",
+            },
+          ],
+          raw: "The actual steps to achieve the goal of the lab. Feel free to use the full potential of markdown.\n\n",
+        },
+        {
+          text: "Step 3",
+          subSteps: [
+            {
+              text: "Step 3.1",
+              raw: "A sub step, the index will show up to this level only\n\n",
+            },
+            {
+              text: "Step 3.2",
+              raw: "A sub step, the index will show up to this level only\n\n",
+            },
+            {
+              text: "Step 3.3",
+              raw: "A sub step, the index will show up to this level only\n\n",
+            },
+          ],
+          raw: "A sub step, the index will show up to this level only\n\n",
+        },
+        {
+          text: "Verify",
+          subSteps: [],
+          raw: "Steps to verify the solution.\n\n",
+        },
+        {
+          text: "Cleanup",
+          subSteps: [],
+          raw: "Steps to cleanup all live resources, like deployments and aws resources.\n\n",
+        },
+        {
+          text: "Summary",
+          subSteps: [
+            {
+              text: "Resources",
+              raw: "links to external resources\n\n- [one](one)\n- [two](two)\n- [three](three)\n\n",
+            },
+            {
+              text: "Next Steps",
+              raw: "- Other labs\n- Documentation\n",
+            },
+          ],
+          raw: "A recap what has been achieved and next steps.\n\n",
+        },
       ],
-    },
-    {
-      id: "bb",
-      title: "homemade bread",
-      level: "Advanced",
-      tags: ["bread"],
-      sections: [],
-    },
-    {
-      id: "cc",
-      title: "bolognese",
-      level: "Advanced",
-      tags: ["meat", "italian"],
-      sections: [],
-    },
-    {
-      id: "dd",
-      title: "ramen",
-      level: "Advanced",
-      tags: ["soup", "japanese"],
-      sections: [],
-    },
-    {
-      id: "ee",
-      title: "garlic bread",
-      level: "Advanced",
-      tags: ["bread"],
-      sections: [],
-    },
-    {
-      id: "ff",
-      title: "tomato soup",
-      level: "Advanced",
-      tags: ["soup"],
-      sections: [],
+      images: [],
     },
   ];
   const history = useHistory();
@@ -86,7 +138,7 @@ function App() {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home&nbsp;</Link>
           </li>
           <li>
             <Link to="/lab">Lab</Link>

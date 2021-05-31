@@ -41,19 +41,25 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
   return (
     <div className="Home">
       <h2>Title</h2>
-      <div id="searchBar">
-        <div>
-          <Select
-            className="selectSearchBy"
-            options={options}
-            value={searchType}
-            onChange={(value) => handleChange(value)}
-            defaultValue={{ label: "by Tag", value: "tag" }}
-          />
-          <input type="text" onChange={search}></input>
+
+      <div id="searchArea">
+        <div id="searchBar">
+          <div>
+            <Select
+              className="selectSearchBy"
+              options={options}
+              value={searchType}
+              onChange={(value) => handleChange(value)}
+              defaultValue={{ label: "by Tag", value: "tag" }}
+            />
+            <input type="text" onChange={search}></input>
+          </div>
         </div>
-        <div></div>
+        <div id="totalLabs">
+          <p>Total: 1240312 labs</p>
+        </div>
       </div>
+
       <div id="results">
         <ul>
           {filteredListOfLabs.map((lab, index) => {
@@ -61,8 +67,8 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
               <LabItem
                 key={index}
                 title={lab.title}
-                tags={lab.tags}
-                level={lab.level}
+                tags={lab.metadata.tags.split(",")}
+                level={lab.metadata.level}
                 onClick={() => {
                   handleClickLabItem(lab.id);
                 }}

@@ -4,13 +4,20 @@ import React from "react";
 const LabItem = ({ title, tags, onClick, level }) => {
   return (
     <div className="LabItem" onClick={onClick}>
-      <h3>{title}</h3>
-      <p>
+      <div>
+        <h3>{title}</h3>
+
+        <div class="levelInfo">
+          {/* Icon? */}
+          <p>{level}</p>
+        </div>
+      </div>
+
+      <div>
         {tags.map((tag, index) => {
-          return <span>{tag} </span>;
+          return <span className="tags">{tag}</span>;
         })}
-      </p>
-      <p>{level}</p>
+      </div>
     </div>
   );
 };
