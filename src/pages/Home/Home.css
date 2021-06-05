@@ -1,17 +1,3 @@
-.App ul {
-  list-style: none;
-  padding: 0px;
-}
-
-.App ul li {
-  display: inline-block;
-  position: relative;
-}
-
-.App ul li > a {
-  text-decoration: none;
-}
-
 #results {
   width: 90%;
   position: relative;
@@ -45,9 +31,10 @@
   display: block;
   position: relative;
   margin: 20px auto;
-  background-color: #fcd29f;
+  background-color: #199acc;
   border-radius: 4px;
   padding: 10px 10px;
+  text-align: center;
 }
 
 .css-yk16xz-control {
@@ -55,7 +42,7 @@
 }
 
 .LabItem h3 {
-  color: #001d4a;
+  color: #fff;
   text-transform: uppercase;
   margin: 0px 0px 10px 0px;
   text-align: center;
@@ -64,11 +51,11 @@
   display: inline-block;
   text-align: right;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 5px;
   font-size: 14px;
   font-weight: bold;
-  color: #da4167;
+  color: #000000;
   min-width: 70px;
   width: 70px;
 }
@@ -79,7 +66,7 @@
 
 .tags {
   padding: 5px;
-  background-color: #88a2aa;
+  background-color: #000000;
   margin: 5px;
   font-size: 14px;
   color: #fff;
@@ -102,7 +89,7 @@
 #totalLabs {
   display: inline-block;
 }
-@media only screen and (max-width: 401px) {
+@media only screen and (max-width: 601px) {
   .LabItem h3 {
     display: block;
     margin-bottom: 0px;

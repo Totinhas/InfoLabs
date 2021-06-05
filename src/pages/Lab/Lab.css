@@ -1,6 +1,81 @@
-.Lab nav,
-.Lab div {
+.Lab {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.LabContent {
+  width: 90%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.LabContent .LabNav,
+.LabContent .LabText {
   display: inline-block;
+}
+
+.LabInfo {
+  width: 95%;
+  display: block;
+  position: relative;
+  margin: 20px 0px;
+  background-color: #199acc;
+  border-radius: 4px;
+  padding: 10px 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.LabContent h3 {
+  margin-top: 0px;
+}
+
+.h2Content {
+  background-color: #fff;
+  padding: 20px;
+}
+.h2Content:last-child {
+  margin-bottom: 0px;
+}
+
+.h3Content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.stepH2 {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.LabInfo > h1 {
+  margin: 0px;
+}
+
+.LabNav {
+  width: 20%;
+  vertical-align: top;
+}
+.LabText {
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 5%;
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.LabText p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.LabText h2 {
+  margin-top: 0px;
+}
+.LabTags {
+  margin: 0px;
 }
 
 .Lab nav {
@@ -8,6 +83,7 @@
   width: 20%;
   margin-right: 50px;
 }
+
 .Lab li {
   list-style: none;
   text-align: left;
@@ -15,21 +91,27 @@
   color: #001d4a;
 }
 
+.Lab li:first-child {
+  margin-top: 20px;
+}
 .Lab li a {
   text-decoration: none;
-  color: #001d4a;
+  color: #ffff;
 }
 
-.section {
+.step {
   padding: 8px 0px;
-  background-color: #eaf8bf;
+  background-color: #199acc;
   border-bottom: 2px solid #ffffff;
   margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.subSection {
+.subStep {
   padding: 8px 0px;
-  background-color: #eaf8bf;
+  background-color: #199acc;
   border-bottom: 2px solid #ffffff;
   margin-left: 40px;
+  font-size: 16px;
 }

@@ -10,12 +10,13 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
     { label: "by Tag", value: "tag" },
     { label: "by Title", value: "title" },
   ];
-
+  console.log(listOfLabs);
   const [filteredListOfLabs, setFilteredListOfLabs] = useState(listOfLabs);
   const [searchType, setSearchType] = useState({
     label: "by Tag",
     value: "tag",
   });
+
   const handleChange = (value) => {
     setSearchType(value);
   };
@@ -27,7 +28,7 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
           return lab.title.includes(event.target.value);
           break;
         case "tag":
-          let index = lab.tags.findIndex((element) =>
+          let index = lab.metadata.tags.findIndex((element) =>
             element.includes(event.target.value)
           );
           return index > -1;
@@ -67,7 +68,7 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
               <LabItem
                 key={index}
                 title={lab.title}
-                tags={lab.metadata.tags.split(",")}
+                tags={lab.metadata.tags}
                 level={lab.metadata.level}
                 onClick={() => {
                   handleClickLabItem(lab.id);
