@@ -87,7 +87,6 @@
 .Lab li {
   list-style: none;
   text-align: left;
-  padding: 10px 10px;
   color: #001d4a;
 }
 
@@ -96,9 +95,24 @@
 }
 .Lab li a {
   text-decoration: none;
-  color: #ffff;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 70%;
 }
 
+.arrowDown {
+  width: 20px;
+  display: inline-block;
+  position: relative;
+
+  vertical-align: baseline;
+  margin-bottom: 5px;
+}
 .step {
   padding: 8px 0px;
   background-color: #199acc;

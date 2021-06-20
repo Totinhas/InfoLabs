@@ -7,14 +7,13 @@
 #searchBar {
   display: inline-block;
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 
 #searchBar div > input {
   width: 75%;
   display: inline-block;
   height: 30px;
-
   box-sizing: border-box;
 }
 
@@ -26,6 +25,12 @@
   width: 140px;
 }
 
+input[type="text"] {
+  vertical-align: top;
+  position: relative;
+  height: 38px;
+  width: calc(95% - 140px);
+}
 .LabItem {
   width: 95%;
   display: block;
@@ -35,10 +40,6 @@
   border-radius: 4px;
   padding: 10px 10px;
   text-align: center;
-}
-
-.css-yk16xz-control {
-  margin-right: 30px;
 }
 
 .LabItem h3 {
@@ -55,7 +56,7 @@
   top: 5px;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
+  color: #242424;
   min-width: 70px;
   width: 70px;
 }
@@ -66,7 +67,7 @@
 
 .tags {
   padding: 5px;
-  background-color: #000000;
+  background-color: #242424;
   margin: 5px;
   font-size: 14px;
   color: #fff;
@@ -90,19 +91,6 @@
   display: inline-block;
 }
 @media only screen and (max-width: 601px) {
-  .LabItem h3 {
-    display: block;
-    margin-bottom: 0px;
-  }
-  .levelInfo {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    top: 0px;
-    width: 100%;
-    right: 0;
-  }
-
   .levelInfo p {
     text-align: center;
   }
@@ -115,6 +103,23 @@
 
   #searchBar .selectSearchBy {
     width: 120px;
+  }
+}
+
+@media only screen and (max-width: 826px) {
+  .levelInfo {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .LabItem h3 {
+    display: block;
+    margin-bottom: 0px;
   }
 }
 

@@ -39,26 +39,31 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
 
     setFilteredListOfLabs(updatedFilteredListOfLabs);
   };
+  const selectStyle = {
+    control: (styles) => {
+      console.log(styles);
+      return { ...styles, marginRight: "10px" };
+    },
+  };
   return (
     <div className="Home">
       <h2>Title</h2>
 
       <div id="searchArea">
         <div id="searchBar">
-          <div>
-            <Select
-              className="selectSearchBy"
-              options={options}
-              value={searchType}
-              onChange={(value) => handleChange(value)}
-              defaultValue={{ label: "by Tag", value: "tag" }}
-            />
-            <input type="text" onChange={search}></input>
-          </div>
+          <Select
+            className="selectSearchBy"
+            styles={selectStyle}
+            options={options}
+            value={searchType}
+            onChange={(value) => handleChange(value)}
+            defaultValue={{ label: "by Tag", value: "tag" }}
+          />
+          <input type="text" onChange={search}></input>
         </div>
-        <div id="totalLabs">
+        {/* <div id="totalLabs">
           <p>Total: 1240312 labs</p>
-        </div>
+        </div>  */}
       </div>
 
       <div id="results">

@@ -37,14 +37,6 @@ function App() {
             <div>
               <h1>LABS</h1>
             </div>
-            <ul>
-              <li>
-                <Link to="/">Home&nbsp;</Link>
-              </li>
-              <li>
-                <Link to="/lab">Lab</Link>
-              </li>
-            </ul>
           </nav>
         </div>
 
