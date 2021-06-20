@@ -12,6 +12,7 @@ import { Home, Lab } from "./pages";
 import { labs } from "./functions";
 
 function App() {
+  const basePath = "/InfoLabs";
   const history = useHistory();
   const [selectedLab, setSelectedLab] = useState();
 
@@ -26,10 +27,8 @@ function App() {
     const lab = labs.find((lab) => lab.id === index);
     setSelectedLab(lab);
     console.log(index, lab);
-    history.push("/lab");
+    history.push(basePath + "/lab");
   };
-
-  const basePath = "/InfoLabs";
 
   return (
     <div className="App">
