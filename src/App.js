@@ -29,6 +29,8 @@ function App() {
     history.push("/lab");
   };
 
+  const basePath = "/InfoLabs";
+
   return (
     <div className="App">
       <div>
@@ -48,10 +50,10 @@ function App() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/">
+          <Route exact path={basePath}>
             <Home listOfLabs={labs} handleClickLabItem={handleClickLabItem} />
           </Route>
-          <Route path="/lab">
+          <Route path={basePath + "/lab"}>
             <Lab labContent={selectedLab} />
           </Route>
         </Switch>
