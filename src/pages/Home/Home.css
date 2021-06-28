@@ -4,6 +4,9 @@
   margin: 0 auto;
 }
 
+#results ul {
+  padding-left: 0px;
+}
 #searchBar {
   display: inline-block;
   position: relative;

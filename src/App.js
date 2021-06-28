@@ -1,59 +1,30 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useHistory,
-} from "react-router-dom";
-import { Home, Lab } from "./pages";
+import { Switch, Route } from "react-router-dom";
+import { Home, Lab, Error404 } from "./pages";
 import { labs } from "./functions";
 
 function App() {
-  const basePath = "/InfoLabs";
-  const history = useHistory();
-  const [selectedLab, setSelectedLab] = useState();
-
-  const handleClickLabItem = (index) => {
-    // alternative find
-    // for (let i = 0; i < labs.length; i++) {
-    //   if (labs[i].id == index) {
-    //     lab = labs[i];
-    //     break;
-    //   }
-    // }
-    const lab = labs.find((lab) => lab.id === index);
-    setSelectedLab(lab);
-    console.log(index, lab);
-    history.push(basePath + "/lab");
-  };
-
+  const basePath = "/Labs";
   return (
     <div className="App">
       <div>
-        <div class="menu">
-          <nav>
-            <div>
-              <h1>LABS</h1>
-            </div>
-          </nav>
+        <div className="menu">
+          <div>
+            <h1 className="logo">
+              <a href={basePath}>LABS</a>
+            </h1>
+          </div>
         </div>
-
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
         <Switch>
           <Route exact path={basePath}>
-            <Home listOfLabs={labs} handleClickLabItem={handleClickLabItem} />
+            <Home listOfLabs={labs} />
           </Route>
-          <Route path={basePath + "/lab"}>
-            <Lab labContent={selectedLab} />
+          <Route path={basePath + "/lab/:id"}>
+            <Lab labs={labs} />
+          </Route>
+          <Route path="*">
+            <Error404></Error404>
           </Route>
         </Switch>
       </div>

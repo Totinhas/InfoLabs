@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Select from "react-select";
 import { LabItem } from "../../components";
 import "./Home.css";
+import { useHistory } from "react-router-dom";
 
-// import "./HomePage.css";
-
-const Home = ({ listOfLabs, handleClickLabItem }) => {
+const Home = ({ listOfLabs }) => {
+  const history = useHistory();
+  const basePath = "/Labs"; // move this to an import
   const options = [
     { label: "by Tag", value: "tag" },
     { label: "by Title", value: "title" },
@@ -21,20 +22,27 @@ const Home = ({ listOfLabs, handleClickLabItem }) => {
     setSearchType(value);
   };
 
+  const handleClickLabItem = (labId) => {
+    history.push(basePath + "/lab/" + labId);
+  };
+
   const search = (event) => {
     const updatedFilteredListOfLabs = listOfLabs.filter((lab) => {
+      let isMatch;
       switch (searchType.value) {
         case "title":
-          return lab.title.includes(event.target.value);
-          break;
+          isMatch = lab.title.includes(event.target.value);
+          break
         case "tag":
           let index = lab.metadata.tags.findIndex((element) =>
             element.includes(event.target.value)
           );
-          return index > -1;
+          isMatch = index > -1;
+          break
         default:
           break;
       }
+      return isMatch
     });
 
     setFilteredListOfLabs(updatedFilteredListOfLabs);

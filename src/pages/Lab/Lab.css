@@ -11,7 +11,24 @@
   margin: 0 auto;
   text-align: left;
 }
+.LabNav ul {
+  list-style: none;
+  padding: 0px;
+  text-align: left;
+}
 
+.LabNav ul li {
+  display: inline-block;
+  position: relative;
+  color: #353535;
+  padding: 20px 20px;
+}
+
+.LabNav ul li > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
 .LabContent .LabNav,
 .LabContent .LabText {
   display: inline-block;
@@ -58,6 +75,12 @@
   width: 20%;
   vertical-align: top;
 }
+
+.LabNav li {
+  list-style: none;
+  text-align: left;
+  color: #001d4a;
+}
 .LabText {
   width: 70%;
   margin-top: 20px;
@@ -78,22 +101,16 @@
   margin: 0px;
 }
 
-.Lab nav {
+.LabNav nav {
   vertical-align: top;
   width: 20%;
   margin-right: 50px;
 }
 
-.Lab li {
-  list-style: none;
-  text-align: left;
-  color: #001d4a;
-}
-
-.Lab li:first-child {
+.LabNav li:first-child {
   margin-top: 20px;
 }
-.Lab li a {
+.LabNav li a {
   text-decoration: none;
   color: #fff;
   padding: 5px 10px;
@@ -101,8 +118,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-
-  width: 70%;
+  width: 65%;
 }
 
 .arrowDown {
@@ -112,6 +128,9 @@
 
   vertical-align: baseline;
   margin-bottom: 5px;
+}
+pre {
+  font-size: 12px;
 }
 .step {
   padding: 8px 0px;

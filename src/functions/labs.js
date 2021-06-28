@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 const labs = [
   {
     id: "an-example-1",
@@ -110,7 +111,7 @@ const labs = [
       tags: ["cougar", "Munchkin"],
       status: "Published",
     },
-    title: "Woops poop hanging",
+    title: "Blast that piece of junk out of the sky!",
     steps: [
       {
         text: "Overview",
@@ -312,73 +313,18 @@ const labs = [
     images: [],
   },
   {
-    id: "b4llzl-bz-44bl-zl44l4b4l",
+    id: "gfmTest",
     metadata: {
       level: "Intermediate",
       tags: ["tag1", "tag2", "tag3"],
       status: "Published",
     },
-    title: "l4llzl l4 lz 4lbblz 44bl 4l44l4b4l",
+    title: "gfm Test",
     steps: [
       {
         text: "l4l44llb",
         subSteps: [],
-        raw: "4zlb lzzzll4b zbb zb blzlz l 4lb 4lzb, llzzl4zlblzl blzz lbzl l4z bb44lbl4l 4l44l4b4l zb zlzzbl zzl lz 4lbblz.\n\n",
-      },
-      {
-        text: "44l4llllblzlb",
-        subSteps: [],
-        raw: '4zlb zbblll4z lbblllb zzl 4bzzbbl4b  \n4. bbl zl4l lz4llzl l4bzlzzlz [z4l44](zzzzb://blzzl4.bbl/z4lzlzb/z4l44)\n4. bbl zl4l lz4llzl l4bzlzzlz l4z bb44lbl4lz [lbb-bbzl](zzzzb://b4lbbllb.lzzlbbll4.4lz/blbl/bzlblb/44b4/zlblb/l444lllll/bll+l4b+lbzl+b4bz4lbzlb4b)\n4. zb4 zzl 4l4l4lblzlb4 bzlz lbl blzz 4llz "4l" l4bzlzzlz. \n\n',
-      },
-      {
-        text: "l4llzl zzl zl4lbzb4l bz4lbzl4l",
-        subSteps: [],
-        raw: "bb zlbb4l4lz l4 [blzlz-zl44l4b4l-z4b4lbz](./blzlz-zl44l4b4l-z4b4lbz.lz) bl z4lbb4l4l l bbllb4 zl4lbzb4l bz4lbzl4l. \n\n4zl bz4lbzl4l lzzbbb 4b4 zzl 4lbbl4bl bbzl zb 4l bzl4lz b4l4 l44l4b4ll4zb \n\nlbzl zzl [4lbbl4z.z44l4b](zzzzb://blzzl4.bbl/lb4zlzlbz/zl4b/z4ll/zl44l4b4l_bz/zl4b/blzlz-zl44l4b4l-z4b4lbz/lzzl4lll4zlz/4lbbl4z.z44l4b) l4z [zl44l4b4l.z44l4b](zzzzb://blzzl4.bbl/lb4zlzlbz/zl4b/z4ll/zl44l4b4l_bz/zl4b/blzlz-zl44l4b4l-z4b4lbz/lzzl4lll4zlz/zl44l4b4l.z44l4b) 4b4 zzl lzzl4lll4zlz lbbbl4z 44bl zzl [zl4b](zzzzb://blzzl4.bbl/lb4zlzlbz/zl4b/z4ll/zl44l4b4l_bz/zl4b/blzlz-zl44l4b4l-z4b4lbz/lzzl4lll4zlz)\n\n```bz\n# l4llzl l 4lbl zl4lbzb4l\nlbzl4 ll_bz_lzzl4lll4z && bz ll_bz_lzzl4lll4z\n# l4llzl 4bzzl4 zb bzb4l 4lbbl4z.z44l4b l4z zl44l4b4l.z44l4b\nlbzl4 -z lzzl4lll4zlz/ll-blbz-4/bz_zlbz \n# b4 lbl zl4l zl4b 4lzb bzb4lz \nbz ${zl4b_4lzb_zbblzlb4}/zl4b/blzlz-zl44l4b4l-z4b4lbz/lzzl4lll4zlz/* lzzl4lll4zlz/ll-blbz-4/bz_zlbz \n```\n\n```bz\n# l4llzl 4bzzl4 4b4 lbzlzl. \nlbzl4 -z zl44l4b4l/bz_zlbz   \n```\n\n",
-      },
-      {
-        text: "bzz 4lbbl4z 4lzlb",
-        subSteps: [],
-        raw: '4l44l4b4l bzb4lb bzlzl l4 4lzlb.  zb4 bzl4lz l4bzlzlbzl4l lz lb z4l4l4lz zzlz bl bzb4l lz l4 l bzl4lz zbblzlb4 bb bzzl4b bl4 llbl lzb4lzlb zb zzl 4lbbl4blb b4 lz bl4 4l zlzlzl4lz. \n\nlzl4 \'lzzl4lll4zlz/ll-blbz-4/bz_zlbz/4lbbl4z.z44l4b\' bbzllz l4 zzl z4l4lblb bzlz l4z lbzl4l zzl \'bll\' zb bbllzzl4b l4llll zb 4lz4lbl4z zzl l444lbz4lbzl4l lbl l4l zlzzbll4b.\n\n```zl44l4b4l\n# 44bl bl bz b4bb44b \n# lzzl4lll4zlz/ll-blbz-4/bz_zlbz/4lbbl4z.z44l4b \n4lbblz = "b44b4l44z4bl-bzlzl-4lbblz"\n\nzl4llbz4_zl4zl = "b44b4l44z4bl-bzlzl-zl4zl"\n\n# lbzl4l zzl bll 4lzll zb bbllzzl4b l4llll\nbll = "lzzl4lll4zlz/ll-blbz-4/[ll_l4llll_4lbblz_bzlzl]_bz_zlbz.z4bzlzl"\n\n4lblb4 = "ll-blbz-4"\n```\n\nzbb bl\'zz b4llzl zzl \'zl44l4b4l/ll-blbz-4/bz_zlbz/4lbbl4z.z4\' 4lzl.  bzbb l4bl4l zzlz zzl bzlbl4llz 4l4blb4 b4 4l44l4b4l lb l4bzlzzlz lbl4b \'z4l44\'.\n\n```bz\nz4l44 lbl l.44.4l\nzblbz zl44l4b4l/bz_zlbz/4lbbl4z.z4 \n``` \n```zl44l4b4l\n# zl44l4b4l/bz_zlbz/4lbbl4z.z4 \nzl44l4b4l {\n    4llll4lz_4l4blb4 = "=l.44.4l"\n\n    4lbbl4z "bz" {\n    }\n}\n```\n\n',
-      },
-      {
-        text: "lb44lbl4l bll z4b4lzl4",
-        subSteps: [],
-        raw: '4b b4llzl bll 4lbbl4blb bl 4llz zb llzb4z zzl bll z4b4lzl4.  ```bz\nzblbz zl44l4b4l/bz_zlbz/z4b4lzl4.z4   \n```\n\nll lbl l4 lbbbl4z zbbblz z4b4lzl4 zb z4b4lzl bl4lzl l4 zzl zlzlzl4lb.  bz lb llbl zb l4bb44lbzzl zlzzbl l444lbz4lbzl4l zb zzl b4b4b l44l4b4ll4z.  4zl4l4b4l, bl lbl "${4l4.lbbbl4z_lz}" lb l 4lz b4 l bl4lzl 4lz.  \n4zlb lll4b zzlz lz blzz b4zl zlzzbl zzl 4lbbl4blb bl zlzl4 bzlbl4l zb zzl blz lzzl4lll4zlz lbbbl4z "b44b4l44z4bl".```zl44l4b4l\n# zl44l4b4l/bz_zlbz/z4b4lzl4.z4 \nz4b4lzl4 "lbb" {\n  4lblb4 = "${4l4.4lblb4}"\n  lzzbblz_lbbbl4z_lzb = ["${4l4.lzzbblz_lbbbl4z_lzb}"]\n}\n```\n\n4b zlbb l4 l 4lblb4 l4z lbbbl4z_lz 4l4ll4zlb bl 4llz zb bzlbl4l l 4l44l4b4l 4l4ll4zl zlbb4lzzb4.   ```bz\nzblbz zl44l4b4l/bz_zlbz/4l4ll4zlb.z4   \n```\n```zl44l4b4l\n# zl44l4b4l/bz_zlbz/4l4ll4zlb.z4   \n4l4ll4zl "4lblb4" {}\n4l4ll4zl "lzzbblz_lbbbl4z_lzb" {}\n```\n\n',
-      },
-      {
-        text: "blzzl4zlblzl",
-        subSteps: [],
-        raw: "zl4b4l bl bl4 4l4 4l44l4b4l bl 4llz zb zbbl4 zzl bzlzz blzz lbb-bbzl. 4bbb b4 bb44lbl4l4b lbb-bbzl bl4 4l 4bl4z [zl4l](zzzzb://b4lbbllb.lzzlbbll4.4lz/blbl/bzlblb/44b4/zlblb/l444lllll/bll+l4b+lbzl+b4bz4lbzlb4b)```bz\nlbb-bbzl lzlb lzzl4lll4zlz -- $l4b44\n```\n\nzl4b: b4 lbl'z zlbl zb lbblbb zzl lbbbl4zb l4zl4 zl44l4l4z 4bzlb lbl bl4 lzzzlblzzl zlbb l4 l bb44lb 4lzl. b lbllzzl z4b4lzl l zl4llzz 4llbb4zl l4z zzl4 lzzzlblzzl b4l44lzl 4b4 lzll4 4bzlb.  \n\nzl4b: 4b zlzzbl lbl 4llz bzll4 4bzl z4l4lzlbl.\n\n```bz\n# ~/.lbb/bb44lb_lzll4\n# [z4b4lzl lzzl4lll4zlz]\n# 4bzl_l44 = l44:lbb:lll::b44b4l44z4bl:4bzl/bzll4\nbll_llzzbl_zb4b=~/.lbb/bb44lb_lzll4 lbb-bbzl lzlb lzzl4lll4zlz -- $l4b44\n```\n\n",
-      },
-      {
-        text: "b4lzllzlbl 4l44l4b4l 44b4lbz",
-        subSteps: [],
-        raw: '4l4l4b zzl l4lzllzlblzlb4 b4 zzl zl44l4b4l z4b4lbz l .zl44l4b4l 4bzzl4 blzz 4l b4llzlz zb bzb4l zzl z4b4lzl4 zbblzzl ```bz\n# b4llzlb .zl44l4b4l 4bzzl4 blzz l4lzllzlblz z4b4lzl4b l4z 4lbbl4z\nbz zl44l4b4l/bz_zlbz/\nzl44l4b4l l4lz --4lbbl4z-bb44lb=../../lzzl4lll4zlz/ll-blbz-4/bz_zlbz/4lbbl4z.z44l4b\n```\n\nll bzblzz lzbzlzl zzl .zl44l4b4l 4bzzl4 44bl bl4 bblllzb zzblbz lb l4 l zlzlzl4l bl\'zz l4lzllzlbl llbz zlll. ```bz\nzblbz .blzlb4b4l\nlbzb ".zl44l4b4l" > .blzlb4b4l\n```\n\n',
-      },
-      {
-        text: "l4llzl 4lbbl4bl l4z bb44lbl4lzlb4",
-        subSteps: [],
-        raw: 'b4 lz 4lbblz lb l bl4bzl bzb4lz 4lbbl4bl.   \n\nll\'zz 4l4bz z4b4lzl lz l l4llll 4lll.  b4 l4 lzlzb4 lzlz \'lzzl4lll4zlz/ll-blbz-4/bz_zlbz/zl44l4b4l.z44l4b\' ```zl44l4b4l\n# lzzl4lll4zlz/ll-blbz-4/bz_zlbz/zl44l4b4l.z44l4b \n4lblb4 = "ll-blbz-4"\n\nlzzbblz_lbbbl4z_lzb = "b44b4l44z4bl"\n\n# bzz l l4llll 4lbblz 4lll 4b4 zzl 4lbblz bl l4l b4llzl4b\n4lbblz_4lll = "zlbz-[4lll_zl4l]-bz-l4llll4lll"\n```\n\n4b zlbb l4 l 4lbblz_4lll 4l4ll4zl bl 4llz zb bzlbl4l l 4l44l4b4l 4l4ll4zl zlbb4lzzb4.  zb4 44l4lzl bl\'zz lzbb lzz zzl zlbb bl\'zz lzzzl zb zzl 4lbbl4bl.  lzl4 \'zl44l4b4l/bz_zlbz/4l4ll4zlb.z4\'```zl44l4b4l\n# zl44l4b4l/bz_zlbz/4l4ll4zlb.z4   \n4l4ll4zl "4lblb4" {}\n4l4ll4zl "lzzbblz_lbbbl4z_lzb" {}\n\n# zlbb zb 4l lzzzllz zb 4lbbl4bl\n4l4ll4zl "zlbb" {\n  zlzl = "llz"\n\n  zl4llzz = {\n    "b4llzlz_4l"  = "zl44l4b4l"\n    "lzzzlblzlb4" = "zl4b"\n    "bb4l4"       = "bz_zlbz"\n  }\n}\n\n# 4lbblz 4lll\n4l4ll4zl "4lbblz_4lll" {}\n```\n\nzbb bl bl4 zl4l4l l bllzzl lz 4lbbl4bl.```bz\nzblbz ../../zl44l4b4l/bz_zlbz/bz.z4   \n```\nll b4llzl zzl 4lbbl4bl blzz zl4lllzl4b zzlz bl blzz zl4l4l 4lzz. ```zl44l4b4l\n# zl44l4b4l/bz_zlbz/bz.z4   \n4lbbl4bl "lbb_bz_4lbblz" "4lbblz" {\n  4lbblz = "${4l4.4lbblz_4lll}"\n  lbz    = "z4l4lzl"\n\n  zlbb = "${4l4.zlbb}"\n}\n```\n\n',
-      },
-      {
-        text: "bzlblzl zzl zzl4",
-        subSteps: [],
-        raw: 'zl4b4l bl 4llzz zzl 4lbbl4bl bl lbllzzl zlbl zzl bzlz b4 lzlll4l4b zzl 4l44l4b4l zzl4.\n\n**zl4b:** b4 lbl zl4l 4ll4 bb4bl4b l4 l4 lbb-bbzl bzlzz 4b4 l bzlzl zzl zbbl4 blzz zlll blz.  lbllzlllb lz bl4 zb zzlb zlz4bll zz4blbz lzzzll4b zzl zzl4 b4 lzzzl bzlblb.  \n\n```bz\nzl44l4b4l zzl4 --4l4-4lzl=../../lzzl4lll4zlz/ll-blbz-4/bz_zlbz/zl44l4b4l.z44l4b\n```\n\n4zlb blzz blzzlz bbllzzl4b zlbl.```bz\nb4 lzlblzlb4 zzl4 zlb 4ll4 bl4l4lzlz l4z lb bzbb4 4lzbb.\nzlbbl4bl lbzlb4b l4l l4zlblzlz blzz zzl 4bzzbbl4b bll4bzb:\n  + b4llzl\n\n4l44l4b4l blzz zl44b4l zzl 4bzzbbl4b lbzlb4b:\n\n  + lbb_bz_4lbblz.4lbblz\n      lz:                          <bblzlzlz>\n      lbblzl4lzlb4_bzlzlb:         <bblzlzlz>\n      lbz:                         "z4l4lzl"\n      l44:                         <bblzlzlz>\n      4lbblz:                      "zlbz-ll-bz-l4llll4lll"\n      4lbblz_zblll4_4lll:          <bblzlzlz>\n      4lbblz_4lblb4lz_zblll4_4lll: <bblzlzlz>\n      4b4bl_zlbz4bl:               "4lzbl"\n      zbbzlz_4b4l_lz:              <bblzlzlz>\n      4lblb4:                      <bblzlzlz>\n      4llllbz_zlll4:               <bblzlzlz>\n      zlbb.%:                      "z"\n      zlbb.lzzzlblzlb4:            "zl4b"\n      zlbb.b4llzlz_4l:             "zl44l4b4l"\n      zlbb.bb4l4:                  "bz_zlbz"\n      4l4blb4l4b.#:                <bblzlzlz>\n      bl4blzl_zblll4:              <bblzlzlz>\n      bl4blzl_l4zzbl4z:            <bblzlzlz>\n\n\n4zl4: 4 zb lzz, l zb bzl4bl, l zb zlbz4bl.\n```\n\nl4bl 4l4llblz bl bl4 4bb lzzzl zzl bzl4blb. ```bz\nzl44l4b4l lzzzl --4l4-4lzl=../../lzzl4lll4zlz/ll-blbz-4/bz_zlbz/zl44l4b4l.z44l4b\n```\n\n4l4l4b zzl lzzzl zzlbl zzl blzzlz bzblzz zbbb bbllzzl4b zlbl.  ```bz\nlbb_bz_4lbblz.4lbblz: l4llzl4b...\n  lbblzl4lzlb4_bzlzlb:         "" => "<bblzlzlz>"\n  lbz:                         "" => "z4l4lzl"\n  l44:                         "" => "<bblzlzlz>"\n  4lbblz:                      "" => "zlbz-ll-bz-l4llll4lll"\n  4lbblz_zblll4_4lll:          "" => "<bblzlzlz>"\n  4lbblz_4lblb4lz_zblll4_4lll: "" => "<bblzlzlz>"\n  4b4bl_zlbz4bl:               "" => "4lzbl"\n  zbbzlz_4b4l_lz:              "" => "<bblzlzlz>"\n  4lblb4:                      "" => "<bblzlzlz>"\n  4llllbz_zlll4:               "" => "<bblzlzlz>"\n  zlbb.%:                      "" => "z"\n  zlbb.lzzzlblzlb4:            "" => "zl4b"\n  zlbb.b4llzlz_4l:             "" => "zl44l4b4l"\n  zlbb.bb4l4:                  "" => "bz_zlbz"\n  4l4blb4l4b.#:                "" => "<bblzlzlz>"\n  bl4blzl_zblll4:              "" => "<bblzlzlz>"\n  bl4blzl_l4zzbl4z:            "" => "<bblzlzlz>"\nlbb_bz_4lbblz.4lbblz: l4llzlb4 bblzzlzl l4zl4 zb (b4: zlbz-ll-bz-l4llll4lll)\n```\n\n4zlz\'b lz bl bzblzz zl4l l4 lz 4lbblz!!\n\n',
-      },
-      {
-        text: "zl4l4l",
-        subSteps: [],
-        raw: "l4bl zzl zzl4 zlb 4ll4 lzzzllz bl bl4 4l4l4l zzl 4lbblz lzlbzl4bl lbl4b zzl bll bzl.  \n\nzl4 zzl 4bzzbbl4b bb4lzz l4z 4l4l4l zzl bb44lbl4lz 4lbblz 4lll lzlbzb. ```bz\nlbb bzlzl zlbz-4lbblzb | 4l '.[\"zlbblzb\"][].zlll' --4lb-blzzlz \n```\n\nbbl bl4 lzbb lbl zzl bl4 bb4bbzl.  ```bz\nlbb-bbzl zbbl4 lzzl4lll4zlz   \n```\n\n",
-      },
-      {
-        text: "lzll4lz",
-        subSteps: [],
-        raw: "l4bl zzl 4lbblz lb 4l4l4llz bl bl4 bzll4lz```bz\nzl44l4b4l zlbz4bl --4l4-4lzl=../../lzzl4lll4zlz/ll-blbz-4/bz_zlbz/zl44l4b4l.z44l4b\n``` \n\n",
-      },
-      {
-        text: "lllll4l",
-        subSteps: [],
-        raw: "bbl zl4l bblzzlzlz zzl zl4 zb b4llzl l4 lz 4lbblz\n\nll zl4l bb4l4lz:     * lb44lbl4l4b l zl44l4b4l z4b4lbz\n   * zbzzbbl4b zzl l4lz, zzl4, lzzzl bb4b4zbb b4 zl44l4b4l\n   * lzll4l4b lz zzbbl 4lbbl4blb.\n",
+        raw: "bue simples",
       },
     ],
     images: [],
