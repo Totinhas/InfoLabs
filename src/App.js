@@ -5,7 +5,7 @@ import { Home, Lab, Error404 } from "./pages";
 import { labs } from "./functions";
 
 function App() {
-  const basePath = "/Labs";
+  const basePath = "/";
   return (
     <div className="App">
       <div>
@@ -20,7 +20,7 @@ function App() {
           <Route exact path={basePath}>
             <Home listOfLabs={labs} />
           </Route>
-          <Route path={basePath + "/lab/:id"}>
+          <Route path={basePath + "lab/:id"}>
             <Lab labs={labs} />
           </Route>
           <Route path="*">

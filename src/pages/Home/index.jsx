@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 
 const Home = ({ listOfLabs }) => {
   const history = useHistory();
-  const basePath = "/Labs"; // move this to an import
+  const basePath = "/"; // move this to an import
   const options = [
     { label: "by Tag", value: "tag" },
     { label: "by Title", value: "title" },
@@ -23,7 +23,7 @@ const Home = ({ listOfLabs }) => {
   };
 
   const handleClickLabItem = (labId) => {
-    history.push(basePath + "/lab/" + labId);
+    history.push(basePath + "lab/" + labId);
   };
 
   const search = (event) => {
