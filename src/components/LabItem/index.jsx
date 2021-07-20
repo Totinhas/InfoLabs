@@ -15,7 +15,11 @@ const LabItem = ({ title, tags, onClick, level }) => {
 
       <div>
         {tags.map((tag, index) => {
-          return <span className="tags">{tag}</span>;
+          return (
+            <span key={index} className="tags">
+              {tag}
+            </span>
+          );
         })}
       </div>
     </div>

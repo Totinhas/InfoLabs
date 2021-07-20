@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { LabItem } from "../../components";
 import "./Home.css";
@@ -11,12 +11,17 @@ const Home = ({ listOfLabs }) => {
     { label: "by Tag", value: "tag" },
     { label: "by Title", value: "title" },
   ];
-  console.log(listOfLabs);
+  // console.log('Home', listOfLabs);
   const [filteredListOfLabs, setFilteredListOfLabs] = useState(listOfLabs);
   const [searchType, setSearchType] = useState({
     label: "by Tag",
     value: "tag",
   });
+
+  useEffect(() => {
+    // console.log('Home', "useEffect", listOfLabs);
+    setFilteredListOfLabs(listOfLabs)
+  }, [listOfLabs]);
 
   const handleChange = (value) => {
     setSearchType(value);
@@ -49,7 +54,6 @@ const Home = ({ listOfLabs }) => {
   };
   const selectStyle = {
     control: (styles) => {
-      console.log(styles);
       return { ...styles, marginRight: "10px" };
     },
   };

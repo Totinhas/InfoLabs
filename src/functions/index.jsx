@@ -1,1 +1,1 @@
-export { default as labs } from "./labs";
+export { default as getLabsData } from "./api";

@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import { Home, Lab, Error404 } from "./pages";
-import { labs } from "./functions";
+import { getLabsData } from "./functions";
 
 function App() {
   const basePath = "/";
+  const [labsData, setLabsData] = useState([]);
+  useEffect(() => {
+    // console.log("APP", "useEffect");
+    getLabsData()
+      .then(function (response) {
+        // console.log(response.data);
+        setLabsData(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
   return (
     <div className="App">
       <div>
         <div className="menu">
           <div>
             <h1 className="logo">
-              <a href={basePath}>LABS</a>
+              <a href={basePath}>INFO LABS</a>
             </h1>
           </div>
         </div>
         <Switch>
           <Route exact path={basePath}>
-            <Home listOfLabs={labs} />
+            <Home listOfLabs={labsData} />
           </Route>
           <Route path={basePath + "lab/:id"}>
-            <Lab labs={labs} />
+            <Lab ={labsData} />
           </Route>
           <Route path="*">
             <Error404></Error404>

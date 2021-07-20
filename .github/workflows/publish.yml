@@ -1,0 +1,33 @@
+name: Publish
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build
+      - name: Process Labs
+        run: |
+          npx l4bz labs-to-json labs
+          cp labs.json build
+          cp -r labs build/lab
+      - name: Publish to AWS S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+        run: |
+          aws s3 sync --delete build s3://963345548549-l4bz
+          # aws cloudfront create-invalidation --distribution-id E1UN1A2NXL6S6R --paths "/*"

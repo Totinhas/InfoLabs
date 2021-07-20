@@ -1,8 +1,3 @@
-
-
-
-
-
 function toggleNav() {
   const burger = document.querySelector(".fa-bars");
   const nav = document.querySelector(".menus");
