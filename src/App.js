@@ -33,7 +33,7 @@ function App() {
             <Home listOfLabs={labsData} />
           </Route>
           <Route path={basePath + "lab/:id"}>
-            <Lab ={labsData} />
+            <Labs labs={labsData}/>
           </Route>
           <Route path="*">
             <Error404></Error404>
