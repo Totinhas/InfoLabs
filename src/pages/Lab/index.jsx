@@ -36,7 +36,7 @@ const Lab = ({ labs }) => {
           {...props}
         />
       ) : (
-        <code className={className} {...props} />
+        <code className={className} {...props} >{String(children).replace(/\n$/, "")}</code>
       );
     },
   };

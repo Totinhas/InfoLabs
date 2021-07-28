@@ -148,3 +148,15 @@ pre {
   margin-left: 40px;
   font-size: 16px;
 }
+
+@media (max-width: 768px) {
+  .LabContent > .LabNav {
+    display: none;
+    position: relative;
+    visibility: hidden;
+  }
+  .LabText {
+    width: 95%;
+    margin-left: 0px;
+  }
+}
