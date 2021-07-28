@@ -24,7 +24,7 @@ function App() {
         <div className="menu">
           <div>
             <h1 className="logo">
-              <a href={basePath}>LABS</a>
+              <a href={basePath}>INFO LABS</a>
             </h1>
           </div>
         </div>
