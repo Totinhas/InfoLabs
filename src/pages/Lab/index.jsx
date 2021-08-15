@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useLocation } from "react-router-dom";
 
 const Lab = ({ labs }) => {
   let { id } = useParams();
@@ -24,6 +25,21 @@ const Lab = ({ labs }) => {
     }
   }, [labs, id]);
 
+  const scrolledRef = React.useRef(false);
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    console.log("useEffect");
+    if (hash && !scrolledRef.current) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        scrolledRef.current = true;
+      }
+    }
+  });
+
   const components = {
     code({ node, inline, className, children, ...props }) {
       const match = /language-(\w+)/.exec(className || "");
@@ -36,7 +52,9 @@ const Lab = ({ labs }) => {
           {...props}
         />
       ) : (
-        <code className={className} {...props} >{String(children).replace(/\n$/, "")}</code>
+        <code className={className} {...props}>
+          {String(children).replace(/\n$/, "")}
+        </code>
       );
     },
   };
@@ -56,7 +74,11 @@ const Lab = ({ labs }) => {
             <p>{labContent.level}</p>
             <p className="LabTags">
               {labContent.metadata.tags.map((tag, index) => {
-                return <span key={index} className="tags">{tag} </span>;
+                return (
+                  <span key={index} className="tags">
+                    {tag}{" "}
+                  </span>
+                );
               })}
             </p>
           </div>
