@@ -20,7 +20,15 @@ What are we trying to solve?
 
 ### Solution
 
-How are we going to solve the problem?
+How are we going to solve the `inline` problem?
+
+`inline`
+
+```bash
+# multiline
+# code
+ls .
+```
 
 ### Prerequisites
 

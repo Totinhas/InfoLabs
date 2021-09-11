@@ -126,7 +126,7 @@ const Lab = ({ labs }) => {
                       className="markdown-body"
                       components={components}
                       remarkPlugins={[gfm]}
-                      children={"blah"}
+                      children={step.raw}
                     />
                   </div>
 

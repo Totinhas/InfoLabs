@@ -8,7 +8,6 @@ const LabItem = ({ title, tags, onClick, level }) => {
         <h3>{title}</h3>
 
         <div className="levelInfo">
-          {/* Icon? */}
           <p>{level}</p>
         </div>
       </div>

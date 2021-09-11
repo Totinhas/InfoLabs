@@ -1,18 +1,22 @@
 ---
-level: Intermediate
-tags: tag1,tag2,tag3
-status: Published
+level: Advanced [Foundational | Intermediate | Advanced]
+tags: tech, coding, react [comma separated words]
+status: Published [Published | Draft]
 ---
 
-# Title
+# Title [only one title per Lab]
 
 ## Overview
 
 Explanation of what is going to be achieved, what are the prerequisites and important notes.
 
+[any markdown]
+
 ### Context
 
 Context of the problem.
+
+[any markdown]
 
 ### Problem
 
@@ -33,11 +37,11 @@ How are we going to solve the problem?
 
 Any important notes
 
-## Step 1
+## Step 1 [0 to N Steps]
 
 The actual steps to achieve the goal of the lab. Feel free to use the full potential of markdown.
 
-### Step 1.1
+### Step 1.1 [0 to N Sub Steps]
 
 A sub step, the index will show up to this level only
 
